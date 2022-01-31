@@ -17,7 +17,11 @@ redirect_from:
 * 2013: Achieved Preparatory Classes, Polytech Orléans
 
 ## Work experience
-* Today: Postdoctoral research scientist at ONERA - DTIS
+* 2020 - Today: Research scientist at IFREMER
+  * Computer Vision and Robotics Perception
+  * Underwater Robotics
+  
+* 2020: Postdoctoral research scientist at ONERA - DTIS
   * Visual-Inertial Odometry for the localization of pedestrians in complex environments (ANR MALIN)
   
 * 2016: Research Intern at ONERA - DTIS (6 months)
@@ -29,19 +33,3 @@ redirect_from:
 * 2015: Assistant Engineer Intern at SAFRAN - MORPHO (3 months)
   * Internship about biometric authentication
   * Integration of the fingerprint authentication thechnology within the Windows Biometric Framework
-  
-## Skills
-* Computer Vision, SLAM, 3D reconstruction, Deep Learning
-* Signal Processing, Multi-sensors fusion, Kalman filters
-* Programming:
-  * C++
-  * Python
-  * Matlab
-* Libraries: OpenCV, PyTorch
-* Embedded systems: Arduino, ARM, Jetson Tegra
-* Operating systems: Unix environments, Ubuntu, Windows
-  
-## Hobbies
-* Moutain sports: Skiing, Snowboarding, Hiking
-* Travelling
-* Highly interested by new technologies
