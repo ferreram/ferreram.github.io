@@ -1,9 +1,10 @@
 ---
-title: "Publications"
+title: ""
 permalink: /publications/
 author_profile: true
 ---
 
-{% include base_path %}
+Publications
+------
 
 [Google Scholar Profile](https://scholar.google.fr/citations?user=Ftxozj0AAAAJ&hl=fr)
