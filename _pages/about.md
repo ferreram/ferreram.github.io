@@ -20,7 +20,7 @@ News
 ## 2021
 
 ### August:
-Our paper "Hyperspectral 3D Mapping of Underwater Environments" ([pdf](https://openaccess.thecvf.com/content/ICCV2021W/OceanVision/papers/Ferrera_Hyperspectral_3D_Mapping_of_Underwater_Environments_ICCVW_2021_paper.pdf),[code](https://github.com/ov2slam/ov2slam)) has been accepted at ICCV'21, Computer Vision in the Ocean workshop[website](https://www.geomar.de/en/omv/ocean-vision-2021)!
+Our paper "Hyperspectral 3D Mapping of Underwater Environments" ([pdf](https://openaccess.thecvf.com/content/ICCV2021W/OceanVision/papers/Ferrera_Hyperspectral_3D_Mapping_of_Underwater_Environments_ICCVW_2021_paper.pdf),[code](https://github.com/ov2slam/ov2slam)) has been accepted at ICCV'21, Computer Vision in the Ocean workshop [website](https://www.geomar.de/en/omv/ocean-vision-2021)!
 
 ### March:
 Our paper "OV²SLAM: A Fully Online and Versatile Visual SLAM for Real-Time Applications" ([pdf](https://arxiv.org/pdf/2102.04060.pdf),[code](https://github.com/ov2slam/ov2slam)) has been accepted for presentation at ICRA 2021!
