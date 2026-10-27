@@ -28,4 +28,4 @@ What the student will work on.
 
 ## How to apply
 
-Send a CV, a short cover letter and your latest transcripts to maxime.ferrera@gmail.com.
+Send a CV, a short cover letter and your latest transcripts to maxime.ferrera@ifremer.fr.
