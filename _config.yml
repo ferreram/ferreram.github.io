@@ -2,12 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Maxime Ferrera # the website title (if blank, full name will be used instead)
 first_name: Maxime
 middle_name:
 last_name: Ferrera
 contact_note: >
-  Email is the best way to reach me, including about PhD and internship openings.
+  Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Maxime Ferrera, research scientist at Ifremer working on underwater robot perception, visual SLAM and 3D mapping.
 footer_text: >
@@ -71,7 +71,7 @@ al_folio:
     allow_remote_loader: false
   features:
     cv:
-      enabled: true
+      enabled: false
     distill:
       enabled: true
   compat:
@@ -135,8 +135,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: technical notes # blog_name will be displayed in your blog page
-blog_description: notes on robotics, computer vision and embedded systems
+blog_name: Technical notes # blog_name will be displayed in your blog page
+blog_description: Notes on robotics, computer vision and embedded systems
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -193,11 +193,11 @@ collections:
       layout: post
     output: true
   projects:
-    output: true
+    output: false # hidden for now; set to true to publish the projects again
   teachings:
-    output: true
+    output: false # hidden for now; set to true to publish the teaching pages again
   openings:
-    output: true
+    output: false # hidden for now; set to true to publish the openings again
     permalink: /openings/:path/
 
 # -----------------------------------------------------------------------------
@@ -236,6 +236,7 @@ exclude:
   - package-lock.json
   - purgecss.config.js
   - README.md
+  - requirements.txt
   - readme_preview/
   - gems/
   - migrations/

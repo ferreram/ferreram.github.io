@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Research Scientist, <a href='https://www.ifremer.fr/'>Ifremer</a>, Underwater Robotics Lab
 
@@ -21,7 +21,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -32,4 +32,4 @@ Before joining Ifremer, I was a postdoctoral researcher at [ONERA](https://www.o
 
 My research interests are visual SLAM, 3D reconstruction, sensor fusion and machine learning, with a focus on making them work in the turbid, dynamic and poorly lit conditions found underwater.
 
-**I am looking for students.** I regularly supervise PhD students and interns. See the [openings page](/openings/) for current offers, or email me if you would like to work with me.
+**I am looking for students.** I regularly supervise PhD students and interns. Email me if you would like to work with me.

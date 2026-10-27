@@ -56,10 +56,6 @@ on:
       - "!docs/INSTALL.md"
       - "!README.md"
   workflow_dispatch:
-  # redeploy after the CV workflow commits a freshly rendered PDF
-  workflow_run:
-    workflows: ["Render a CV"]
-    types: [completed]
 
 permissions:
   contents: write
