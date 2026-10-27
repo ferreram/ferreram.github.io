@@ -1,10 +1,22 @@
 ---
-title: ""
+layout: page
 permalink: /publications/
-author_profile: true
+title: publications
+description: Publications in reverse chronological order.
+nav: true
+nav_order: 1
 ---
 
-Publications
-------
+<!-- _pages/publications.md -->
 
-[Google Scholar Profile](https://scholar.google.fr/citations?user=Ftxozj0AAAAJ&hl=fr)
+<!-- Bibsearch Feature -->
+
+See also my [Google Scholar profile](https://scholar.google.com/citations?user=Ftxozj0AAAAJ) for an up-to-date list.
+
+{% include bib_search.liquid %}
+
+<div class="publications">
+
+{% bibliography %}
+
+</div>

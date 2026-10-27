@@ -1,0 +1,8 @@
+github_users:
+  - ferreram
+
+repo_description_lines_max: 2
+
+github_repos:
+  - ov2slam/ov2slam
+  - ferreram/FD-Fusion
