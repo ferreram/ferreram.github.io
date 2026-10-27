@@ -1,0 +1,4 @@
+# Optional venue badge links and colors, keyed by the "abbr" field in papers.bib. Example:
+# "RA-L":
+#   url: https://www.ieee-ras.org/publications/ra-l
+#   color: "#0b6e79"
