@@ -10,7 +10,7 @@
         "description": "How to launch ROS nodes and record bags inside detached screen sessions on a remote robot.",
         "headline": "Running remote screens with ROS",
         
-        "sameAs": ["https://scholar.google.com/citations?user=Ftxozj0AAAAJ","https://github.com/ferreram","https://www.linkedin.com/in/maxime-ferrera-784b1895","https://youtube.com/@UCFsvlI143Evf2F2sF5Hbxuw",null],
+        "sameAs": ["https://scholar.google.com/citations?user=Ftxozj0AAAAJ","https://github.com/ferreram","https://www.linkedin.com/in/maxime-ferrera-784b1895","https://youtube.com/@UCFsvlI143Evf2F2sF5Hbxuw"],
         
         "name": "Maxime Ferrera",
         "@context": "https://schema.org"
@@ -21,7 +21,7 @@
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%8A&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://ferreram.github.io/blog/2018/ros-remote-screen/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Maxime</span> Ferrera </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/openings/">openings </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">notes </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Running remote screens with ROS</h1> <p class="post-meta"> Created on January 05, 2018 </p> <p class="post-tags"> <a href="/blog/2018"> <i class="fa-solid fa-calendar fa-sm"></i> 2018 </a>   ·   <a href="/blog/tag/ros"> <i class="fa-solid fa-hashtag fa-sm"></i> ros</a>   <a href="/blog/tag/embedded-systems"> <i class="fa-solid fa-hashtag fa-sm"></i> embedded-systems</a>   ·   <a href="/blog/category/notes"> <i class="fa-solid fa-tag fa-sm"></i> notes</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>This post is about how to run remote screen(s) with ROS.</p> <p>The correct syntax for launching a remote screen running a ROS script / program is the following:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen <span class="nt">-S</span> screen_name <span class="nt">-dm</span> bash <span class="nt">-c</span> <span class="s2">"source /opt/ros/kinetic/setup.bash &amp;&amp; source ~/catkin_workspace/devel/setup.bash &amp;&amp; roslaunch ros_launch_file.launch"</span>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Maxime Ferrera </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">Technical notes </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Running remote screens with ROS</h1> <p class="post-meta"> Created on January 05, 2018 </p> <p class="post-tags"> <a href="/blog/2018"> <i class="fa-solid fa-calendar fa-sm"></i> 2018 </a>   ·   <a href="/blog/tag/ros"> <i class="fa-solid fa-hashtag fa-sm"></i> ros</a>   <a href="/blog/tag/embedded-systems"> <i class="fa-solid fa-hashtag fa-sm"></i> embedded-systems</a>   ·   <a href="/blog/category/notes"> <i class="fa-solid fa-tag fa-sm"></i> notes</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>This post is about how to run remote screen(s) with ROS.</p> <p>The correct syntax for launching a remote screen running a ROS script / program is the following:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen <span class="nt">-S</span> screen_name <span class="nt">-dm</span> bash <span class="nt">-c</span> <span class="s2">"source /opt/ros/kinetic/setup.bash &amp;&amp; source ~/catkin_workspace/devel/setup.bash &amp;&amp; roslaunch ros_launch_file.launch"</span>
 </code></pre></div></div> <p>This command will create a screen called <em>screen_name</em> and run the required launch file.</p> <p><img class="emoji" title=":bangbang:" alt=":bangbang:" src="https://github.githubassets.com/images/icons/emoji/unicode/203c.png" height="20" width="20"> Note that you need to source your ROS path for every screen you want to run!</p> <h5 id="example">Example:</h5> <ol> <li>Run your launch file in a 1st screen: <div class="language-bash highlighter-rouge"> <div class="highlight"><pre class="highlight"><code>screen <span class="nt">-S</span> screen_name <span class="nt">-dm</span> bash <span class="nt">-c</span> <span class="s2">"source /opt/ros/kinetic/setup.bash &amp;&amp; source ~/catkin_workspace/devel/setup.bash &amp;&amp; roslaunch ros_launch_file.launch"</span>
 </code></pre></div> </div> </li> <li>Record topics int the <em>ros_bags</em> directory in a 2nd screen: <div class="language-bash highlighter-rouge"> <div class="highlight"><pre class="highlight"><code>screen <span class="nt">-S</span> recording_data <span class="nt">-dm</span> bash <span class="nt">-c</span> <span class="s2">"source /opt/ros/kinetic/setup.bash &amp;&amp; source ~/catkin_workspace/devel/setup.bash &amp;&amp; cd ~/ros_bags &amp;&amp; rosbag record /topics"</span>
 </code></pre></div> </div> </li> </ol> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2018/jetson-tx2-j120/">Setting up a Jetson TX2 with the Auvidea J120 carrier board</a> </li> </ul> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Maxime Ferrera. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: October 27, 2026. </div> </footer> <script>
@@ -37,52 +37,24 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "Publications in reverse chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Selected research projects on underwater perception and visual SLAM.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-openings",
-          title: "openings",
-          description: "PhD and internship offers in underwater robot perception and computer vision.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/openings/";
-          },
-        },{id: "nav-notes",
-          title: "notes",
+        },{id: "nav-technical-notes",
+          title: "Technical notes",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
-          },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Courses and student projects I have taught or supervised.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Download the PDF version with the button on the right.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
           },
         },{id: "post-setting-up-a-jetson-tx2-with-the-auvidea-j120-carrier-board",
         
@@ -211,13 +183,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://youtube.com/@UCFsvlI143Evf2F2sF5Hbxuw", "_blank");
-        },
-      },{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/rendercv/rendercv_output/Maxime_Ferrera_CV.pdf", "_blank");
         },
       },{
         id: 'social-rss',
