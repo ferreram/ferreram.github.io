@@ -1,7 +1,8 @@
 ---
+published: false # hidden for now; remove this line to show the page again
 layout: page
 permalink: /openings/
-title: openings
+title: Openings
 description: PhD and internship offers in underwater robot perception and computer vision.
 nav: true
 nav_order: 3

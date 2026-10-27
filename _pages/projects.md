@@ -1,6 +1,7 @@
 ---
+published: false # hidden for now; remove this line to show the page again
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Selected research projects on underwater perception and visual SLAM.
 nav: true
