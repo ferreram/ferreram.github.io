@@ -41,7 +41,7 @@ There are no open offers right now. If you are interested in a PhD or an interns
 
 ## How to apply
 
-Email me at **maxime.ferrera@gmail.com** with your CV, a short cover letter explaining your interest, and your latest transcripts. Please mention the offer you are applying for in the subject line.
+Email me at **maxime.ferrera@ifremer.fr** with your CV, a short cover letter explaining your interest, and your latest transcripts. Please mention the offer you are applying for in the subject line.
 
 {% if past_offers.size > 0 %}
 
