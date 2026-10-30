@@ -197,7 +197,7 @@ collections:
   teachings:
     output: false # hidden for now; set to true to publish the teaching pages again
   openings:
-    output: false # hidden for now; set to true to publish the openings again
+    output: true
     permalink: /openings/:path/
 
 # -----------------------------------------------------------------------------
