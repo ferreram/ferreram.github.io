@@ -35,7 +35,7 @@ I am regularly looking for internship and PhD students to join me in the Underwa
 </div>
 {% endfor %}
 {% else %}
-I have no openings right now. If you are interested in an internship or a PhD in my research area, you are welcome to send me a spontaneous application.
+I have no openings right now.
 {% endif %}
 
 ## How to apply
