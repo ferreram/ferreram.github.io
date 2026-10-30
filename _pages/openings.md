@@ -1,9 +1,8 @@
 ---
-published: false # hidden for now; remove this line to show the page again
 layout: page
 permalink: /openings/
 title: Openings
-description: PhD and internship offers in underwater robot perception and computer vision.
+description: PhD and internship openings.
 nav: true
 nav_order: 3
 ---
@@ -16,7 +15,7 @@ nav_order: 3
   .opening.filled .kind { background: var(--global-text-color-light); }
 </style>
 
-I supervise PhD students and interns in the Underwater Robotics Lab at [Ifremer](https://www.ifremer.fr/), in La Seyne-sur-Mer. Topics include visual and visual-inertial SLAM, 3D reconstruction, sensor fusion and learning-based perception for underwater robots.
+I am regularly looking for internship and PhD students to join me in the Underwater Robotics Lab at [Ifremer](https://www.ifremer.fr/), in La Seyne-sur-Mer. Current openings are posted on this page.
 
 {% assign openings = site.openings | sort: "date" | reverse %}
 {% assign open_offers = openings | where: "status", "open" %}
@@ -36,7 +35,7 @@ I supervise PhD students and interns in the Underwater Robotics Lab at [Ifremer]
 </div>
 {% endfor %}
 {% else %}
-There are no open offers right now. If you are interested in a PhD or an internship on these topics, you are welcome to send me a spontaneous application.
+I have no openings right now. If you are interested in an internship or a PhD in my research area, you are welcome to send me a spontaneous application.
 {% endif %}
 
 ## How to apply
