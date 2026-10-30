@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a research scientist in the Underwater Robotics Lab at [Ifremer](https://www.ifremer.fr/), the French Research Institute for Exploitation of the Sea, in La Seyne-sur-Mer.
+I am a research scientist in the Underwater Robotics Lab at [Ifremer](https://www.ifremer.fr/), in La Seyne-sur-Mer. I work on robotics perception and computer vision.
 
 Before joining Ifremer, I was a postdoctoral researcher at [ONERA](https://www.onera.fr/), the French Aerospace Lab, working on visual SLAM. I did my PhD at ONERA and [LIRMM](https://www.lirmm.fr/) on vision-based localization and 3D mapping for underwater robots.
 
