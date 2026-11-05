@@ -38,10 +38,6 @@ I am regularly looking for internship and PhD students to join me in the Underwa
 I have no openings right now.
 {% endif %}
 
-## How to apply
-
-Email me at **maxime.ferrera@ifremer.fr** with your CV, a short cover letter explaining your interest, and your latest transcripts. Please mention the offer you are applying for in the subject line.
-
 {% if past_offers.size > 0 %}
 
 ## Past offers
